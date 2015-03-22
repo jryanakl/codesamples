@@ -1,5 +1,0 @@
-{
-  "continue": "Continue",
-  "idleMsg": "Your session is about to expire.  You'll be logged off in {countdown} seconds.  Click Continue to keep your session active.",
-  "timedout": "You have been logged out due to inactivity."
-}

@@ -9,7 +9,5 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "fm-state": "~2.0.5"
-  }
+  "dependencies": {}
 }
