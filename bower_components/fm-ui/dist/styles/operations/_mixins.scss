@@ -1,0 +1,195 @@
+// Add Icon
+// 
+// Adds an icon before or after the element it's applied to.
+// $icon is expecting the enytpo \e001 format - check your variables.
+// $side only looks for 'left' or 'right'.
+// $icon-inner-padding sets the space between your element and the icon.
+//
+@mixin add-icon ($icon, $font-color: inherit, $icon-inner-padding: $icon-inner-padding, $font-size: $icon-font-size, $side: left) {
+  $opposite-side: opposite-position($side);
+  $icon-pseudo: 'before';
+  @if ($side == right) {
+    $icon-pseudo: 'after';
+  }
+  &:#{$icon-pseudo} {
+    content: "#{$icon}";
+    color: $font-color;
+    font-family: 'FireMonIcons';
+    font-size: $font-size;
+    font-variant: normal;
+    font-weight: normal;
+    padding-#{$opposite-side}: $icon-inner-padding;
+    speak: none;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@mixin add-icon-svg ($file-name: map-generic-device, $zoom: .08) {
+  &:before {
+    content: url(../images/#{$file-name}.svg);
+    padding-right: 2em;
+    position: relative;
+    top: $zoom * 6em;
+    zoom: $zoom;
+  }
+}
+
+@mixin add-icon-tbl ($icon, $font-color: $gray-lighter, $icon-inner-padding: $icon-inner-padding, $font-size: $font, $side: left) {
+  @include add-icon ($icon, $font-color, $icon-inner-padding, $font-size, $side);
+}
+
+// Buttons
+// 
+// These only handle colors, hovers and actives.  
+// You'll need to set padding, icons and font size manually.
+// Default button styling can be found in _buttons.scss
+//
+@mixin btn-flat ($bg-color:$blue, $font-color: $white) {
+  &, &:before, &:after {
+    @include transition;
+  }
+  background-color: $bg-color;
+  color: $font-color;
+  &:hover {
+    background-color: lighten($bg-color,3%);
+    color: $font-color;
+    text-decoration: none;
+  }
+  &.active {
+    background-color: darken($bg-color,10%);
+    color: $font-color;
+    cursor: default;
+  }
+}
+
+@mixin btn-gradient ($bg-color, $font-color: $white) {
+  &, &:before, &:after {
+    @include transition;
+  }
+  @include background-image (linear-gradient(lighten($bg-color,7%),$bg-color));
+  @include box-shadow (0 .1em 0 lighten($bg-color,20%) inset);
+  background-color: $bg-color;
+  color: $font-color;
+  &:hover {
+    @include background-image (linear-gradient(lighten($bg-color,12%),$bg-color));
+    background-color: lighten($bg-color,3%);
+    color: $font-color;
+  }
+  &.active {
+    @include background-image (linear-gradient(darken($bg-color,10%),$bg-color)); 
+    background-color: darken($bg-color,10%);
+    color: $font-color;
+    cursor: default;
+  }
+}
+
+// Map Popover Arrow
+
+@mixin add-arrow ($direction: left) {
+  $opposite-direction: opposite-position($direction);
+
+  &:after, &:before {
+    #{$opposite-direction}: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  &:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-#{$opposite-direction}-color: #ffffff;
+    border-width: 8px;
+    top: 50%;
+    margin-top: -8px;
+  }
+  &:before {
+    border-color: rgba(184, 184, 184, 0);
+    border-#{$opposite-direction}-color: $gray-lighter;
+    border-width: 9px;
+    top: 50%;
+    margin-top: -9px;
+  }
+}
+
+@mixin cursor-grabbing {
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+// Clearfix
+
+@mixin micro-clearfix {
+  &:before,
+  &:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+
+  &:after {
+      clear: both;
+  }
+}
+
+// Replaced Checkbox
+
+@mixin checkbox ($checkbox-color: $chart-blue) {
+  background: $white;
+  float: left;
+  height: 20px;
+  margin-right: 0.5em;
+  position: relative;
+  width: 20px;
+  input[type=checkbox] {
+    visibility: hidden;
+  }
+  input[type=checkbox]:checked + label:after {
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+  label {
+    border: solid 2px $checkbox-color;
+    cursor: pointer;
+    height: 20px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 20px;
+    &:after {
+      border: 3px solid $checkbox-color;
+      border-top: none;
+      border-right: none;
+      content: '';
+      opacity: 0;
+      height: .6em;
+      left: 2px;
+      position: absolute;
+      top: 3px;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      width: 1em;
+    }
+    &:hover::after {
+      filter: alpha(opacity=30);
+      opacity: 0.3;
+    }
+  }
+}
+
+@mixin checkbox-color ($checkbox-color: $gray-light) {
+  label {
+    border-color: $checkbox-color;
+    &:after {
+      border-color: $checkbox-color;
+    }
+  }
+}

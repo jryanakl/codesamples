@@ -1,0 +1,154 @@
+// Border Radius
+$radius-sm: 3px;
+$radius: 5px;
+$radius-lg: 8px;
+
+// FONT SIZE
+// Defining a base font-size of 62.5% to have the convenience
+// of sizing rems in a way that is similar to using px
+html { font-size: 62.5% }
+// The 'rem' unit is relative to the root (html) element
+// instead of proportional to their nested parent like 'em'
+$font-xxsm: 1.0rem; // 10px
+$font-xsm: 1.1rem; // 11px
+$font-sm: 1.2rem; // 12px
+$font: 1.4rem; // 14px
+$font-2: 1.6rem; // 16px
+$font-md: 1.8rem; // 18px
+$font-mlg: 2.0rem; // 20px
+$font-lg: 2.4rem; // 24px
+$font-xlg: 2.8rem; // 28px
+$font-xxlg: 4.0rem; // 40px
+
+
+// FIREMONICONS V.13
+// Icon variables have to be added manually
+// after updating font files
+$icon-share: \e660;
+$icon-application_object_group: \e661;
+$icon-application_object: \e662;
+$icon-user_object_group: \e663;
+$icon-user_object: \e664;
+$icon-address_range_object: \e665;
+$icon-zone_object: \e666;
+$icon-any_object: \e600;
+$icon-network_object: \e667;
+$icon-host_object: \e601;
+$icon-object_group: \e602;
+$icon-other_service_object: \e668;
+$icon-dce_service_object: \e603;
+$icon-rpc_service_object: \e604;
+$icon-icmp_service_object: \e605;
+$icon-upd_service_object: \e669;
+$icon-tcp_service_object: \e606;
+$icon-grip: \e658;
+$icon-binoculars: \e62b;
+$icon-analysis: \e656;
+$icon-pie_exploded: \e657;
+$icon-policyoptimizer: \e649;
+$icon-tfa: \e64d;
+$icon-report: \e653;
+$icon-restricted: \e654;
+$icon-tableconfig: \e655;
+$icon-trend_down: \e60b;
+$icon-shield: \e60f;
+$icon-sliders: \e62a;
+$icon-tree: \e63f;
+$icon-run: \e640;
+$icon-device_group: \e61f;
+$icon-shortcut: \e622;
+$icon-siql: \e623;
+$icon-favorite_outline: \e610;
+$icon-favorite_filled: \e64a;
+$icon-tools: \e64b;
+$icon-pin: \e64c;
+$icon-cube: \e64e;
+$icon-ribbon: \e64f;
+$icon-devices: \e650;
+$icon-map: \e651;
+$icon-dashboard: \e652;
+$icon-traffic_management_module: \e644;
+$icon-security_device_manager: \e645;
+$icon-router-switch: \e646;
+$icon-os: \e647;
+$icon-firewall: \e648;
+$icon-list: \e607;
+$icon-remove: \e61d;
+$icon-flow-tree: \e608;
+$icon-arrow-left: \e609;
+$icon-users: \e61b;
+$icon-arrow-down: \e60a;
+$icon-pencil: \e61c;
+$icon-arrow-up: \e60c;
+$icon-cog: \e61e;
+$icon-arrow-right: \e60d;
+$icon-thumbsup: \e60e;
+$icon-thumbsdown: \e611;
+$icon-stop: \e612;
+$icon-search: \e613;
+$icon-warning: \e614;
+$icon-minus: \e615;
+$icon-plus: \e616;
+$icon-cross: \e617;
+$icon-gauge: \e618;
+$icon-record: \e619;
+$icon-cross2: \e61a;
+$icon-changes: \e620;
+$icon-cw: \e621;
+$icon-export: \e624;
+$icon-uniE617: \e625;
+$icon-filter: \e626;
+$icon-folder: \e627;
+$icon-folder-open: \e628;
+$icon-house: \e629;
+$icon-loop: \e62c;
+$icon-plus2: \e62d;
+$icon-pie: \e62e;
+$icon-donut_chart: \e642;
+$icon-bars: \e62f;
+$icon-line_chart: \e641;
+$icon-graph: \e643;
+$icon-user: \e630;
+$icon-key: \e631;
+$icon-attachment: \e632;
+$icon-menu: \e633;
+$icon-wrench: \e634;
+$icon-magic: \e635;
+$icon-pushpin: \e636;
+$icon-cogs: \e637;
+$icon-checkmark-circle: \e638;
+$icon-info: \e639;
+$icon-calendar: \e109;
+$icon-th: \e63a;
+$icon-envelope-alt: \e63b;
+$icon-bubble: \e63c;
+$icon-file: \e63d;
+$icon-globe: \e63e;
+$icon-bubble2: \e659;
+$icon-envelope: \e65a;
+$icon-info2: \e65b;
+$icon-copy: \e65c;
+$icon-double-angle-right: \e65d;
+$icon-double-angle-left: \e65e;
+$icon-statistics: \e65f;
+
+// Add Icon Mixin
+$icon-font-size: 2.4rem;
+$icon-inner-padding: 0.7rem;
+
+// Breakpoints
+$bp-sm: 64em;
+$bp-sm-1: 70em;
+$bp-sm-2: 80em;
+$bp-md: 90em;
+$bp-md-1: 100em;
+$bp-md-2: 110em;
+$bp-lg: 122.5em;
+$bp-lg-1: 130em;
+$bp-lg-2: 140em;
+$retina: 2 device-pixel-ratio;
+
+// Built-in Compass transition configuration variables
+// http://compass-style.org/reference/compass/css3/transition/
+$default-transition-duration: 0.3s;
+$default-transition-function: ease;

@@ -1,0 +1,16 @@
+{
+  "name": "angular",
+  "version": "1.3.6",
+  "main": "./angular.js",
+  "ignore": [],
+  "dependencies": {},
+  "_release": "1.3.6",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.3.6",
+    "commit": "a525f1199d44c2aa6d69b1900d4a2e950adc5752"
+  },
+  "_source": "git://fmbower.securepassage.com:6789/angular",
+  "_target": "1.3.6",
+  "_originalSource": "angular"
+}

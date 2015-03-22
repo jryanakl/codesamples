@@ -1,0 +1,63 @@
+{
+  "name": "fm-ui",
+  "version": "3.0.3",
+  "authors": [
+    "''"
+  ],
+  "description": "FireMon UI Components",
+  "main": [
+    "dist/scripts/fm-ui.js",
+    "dist/styles/fm-ui.css",
+    "dist/styles/",
+    "dist/fonts/",
+    "dist/images/"
+  ],
+  "keywords": [
+    "javascript",
+    "colors",
+    "breakpoints",
+    "ui"
+  ],
+  "license": "''",
+  "homepage": "http://www.firemon.com",
+  "private": true,
+  "ignore": [
+    ".*",
+    "app",
+    "target",
+    "test",
+    "tests",
+    "dist/bower_components",
+    "node_modules",
+    "**/*.iml",
+    "**/*.swp",
+    "Gruntfile.js",
+    "karma*",
+    "package.json",
+    "**/*~"
+  ],
+  "dependencies": {
+    "fm-dependencies": "3.0.x",
+    "bootstrap-sass-official": "3.2.0",
+    "angular-bootstrap": "0.12.1",
+    "angular-strap": "2.1.6",
+    "angular-ui-select": "0.9.x",
+    "bootstrap": "~3.2.0"
+  },
+  "resolutions": {
+    "angular": "1.3.36"
+  },
+  "devDependencies": {
+    "angular-mocks": ">=1.3.*",
+    "angular-scenario": ">=1.3.*"
+  },
+  "_release": "3.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.0.3",
+    "commit": "cc40fbd6504ec0f0132395f284ac984326ced168"
+  },
+  "_source": "ssh://git@stash.securepassage.com/webc/fm-ui.git",
+  "_target": "3.0.x",
+  "_originalSource": "fm-ui"
+}

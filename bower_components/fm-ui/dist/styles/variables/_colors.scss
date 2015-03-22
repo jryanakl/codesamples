@@ -1,0 +1,124 @@
+// Element Colors
+$black: #231f20; // Body font
+$blue: #2296d1;
+$blue-dark: #2484b5;
+$blue-darker: #1e688f;
+$blue-darkest: #278DC2;
+$blue-light: lighten($blue, 40%);
+$blue-lighter: #ecf6fb;
+$orange: #f58f31;
+$white: #ffffff;
+$white-smoke: #f1f1f1;
+$gainsboro: #dddddd;
+$green: #5CE62E;
+$red: #ef5d2f;
+
+// Severity Colors
+$severity-red: #c81919;
+$severity-orange: #fa9619;
+$severity-yellow: #e6c832;
+$severity-green: #96c85a;
+
+.severity-red-font {
+  color: $severity-red;
+}
+
+.severity-orange-font {
+  color: $severity-orange;
+}
+
+.severity-yellow-font {
+  color: $severity-yellow;
+}
+
+.severity-green-font {
+  color: $severity-green;
+}
+
+.severity-red-bg {
+  background-color: $severity-red;
+}
+
+.severity-orange-bg {
+  background-color: $severity-orange;
+}
+
+.severity-yellow-bg {
+  background-color: $severity-yellow;
+}
+
+.severity-green-bg {
+  background-color: $severity-green;
+}
+
+// KPIs
+$kpi-favorable: #96c85a;
+$kpi-unfavorable: #c81919;
+$kpi-neutral: #6d6e70;
+
+// Neutrals
+$gray: #787878;
+$gray-dark: #3f3e3e;
+$gray-light: #e1e1e1;
+$gray-lighter: #e1e1e1;
+$gray-lightest: #f5f5f5;
+
+// Secondary Neutrals
+$neut-1: #f8f8f8;
+$neut-2: #fbfbfb;
+$neut-3: #f4f4f4;
+$neut-4: #f3f3f3;
+$neut-5: #ececec;
+$neut-6: #b2b2b2;
+$neut-7: #cbcbcb;
+$neut-8: #e6e6e6;
+$neut-9: #666666;
+$neut-10: #f1f1f1;
+
+// Font Colors
+$font-green: #b8d988;
+$font-orange: $orange;
+$font-red: #ef5d2f;
+$text: #231f20;
+$light_text: #cecece;
+$link_text: #44aadd;
+
+// Chart Colors
+$chart-transparency: .3;
+$chart-transparency-light: .7;
+$chart-transparency-lighter: .85;
+
+$chart-blue: transparentize(#2099d4, $chart-transparency);
+$chart-blue-light: transparentize(#2099d4, $chart-transparency-light);
+$chart-blue-lighter: transparentize(#2099d4, $chart-transparency-lighter);
+
+$chart-green: transparentize(#99cb50, $chart-transparency);
+$chart-green-light: transparentize(#99cb50, $chart-transparency-light);
+$chart-green-lighter: transparentize(#99cb50, $chart-transparency-lighter);
+
+$chart-red: transparentize(#f1612b, $chart-transparency);
+$chart-red-light: transparentize(#f1612b, $chart-transparency-light);
+$chart-red-lighter: transparentize(#f1612b, $chart-transparency-lighter);
+
+$chart-orange: transparentize(#ffd67f, $chart-transparency);
+$chart-orange-light: transparentize(#ffd67f, $chart-transparency-light);
+$chart-orange-lighter: transparentize(#ffd67f, $chart-transparency-lighter);
+
+$chart-gray: transparentize(#aba7d1, $chart-transparency);
+$chart-gray-lighter: transparentize(#aba7d1, $chart-transparency-light);
+$chart-gray-light: transparentize(#aba7d1, $chart-transparency-lighter);
+
+$chart-purple: transparentize(#8781bd, $chart-transparency);
+$chart-purple-light: transparentize(#8781bd, $chart-transparency-light);
+$chart-purple-lighter: transparentize(#8781bd, $chart-transparency-lighter);
+
+// FM Table
+$fm-table-gray: #808080;
+$fm-table-striped: #fafafa;
+$fm-table-hover: rgba(251, 176, 59, 0.2);
+$fm-table-text: $fm-table-gray;
+$fm-table-th-bg-start: rgba(204, 204, 204, 0.5);
+$fm-table-th-bg-end: rgba(153, 153, 153, 0.5);
+$fm-table-border: rgba(128, 128, 128, 0.5);
+$fm-table-headings: #4e4e4e;
+$fm-table-row-border: #e5e5e5;

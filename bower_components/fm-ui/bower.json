@@ -1,0 +1,56 @@
+{
+  "name": "fm-ui",
+  "version": "3.0.3",
+  "authors": [
+    "''"
+  ],
+  "description": "FireMon UI Components",
+  "main": [
+    "dist/scripts/fm-ui.js",
+    "dist/styles/fm-ui.css",
+    "dist/styles/",
+    "dist/fonts/",
+    "dist/images/"
+  ],
+  "keywords": [
+    "javascript",
+    "colors",
+    "breakpoints",
+    "ui"
+  ],
+  "license": "''",
+  "homepage": "http://www.firemon.com",
+  "private": true,
+  "ignore": [
+    ".*",
+    "app",
+    "target",
+    "test",
+    "tests",
+    "dist/bower_components",
+    "node_modules",
+    "**/*.iml",
+    "**/*.swp",
+    "Gruntfile.js",
+    "karma*",
+    "package.json",
+    "**/*~"
+  ],
+  "dependencies": {
+    "fm-dependencies": "3.0.x",
+    "bootstrap-sass-official": "3.2.0",
+    "angular-bootstrap": "0.12.1",
+    "angular-strap": "2.1.6",
+    "angular-ui-select": "0.9.x",
+    "bootstrap": "~3.2.0"
+  },
+  "resolutions": {
+  },
+  "devDependencies": {
+    "angular-mocks": ">=1.3.*",
+    "angular-scenario": ">=1.3.*"
+  },
+  "resolutions": {
+    "angular": "1.3.36"
+  }
+}

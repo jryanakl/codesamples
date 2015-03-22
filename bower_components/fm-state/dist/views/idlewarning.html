@@ -1,0 +1,8 @@
+<div ng-idle-countdown="idleCountdown" ng-init="idleCountdown=idleSettings.warningDuration" class="modal-body">
+  <h4><span class="icon-warning large text-danger"></span> <span data-i18n="fmState.idleMsg" data-countdown="{{idleCountdown}}"></span></h4>
+</div>
+<div class="modal-footer">
+  <div class="btn-toolbar" role="toolbar">
+    <button type="button" class="btn btn-primary" ng-click="$close()" i18n="fmState.continue"></button>
+  </div>
+</div>
